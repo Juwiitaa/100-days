@@ -1,0 +1,29 @@
+package day2;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+	Scanner input = new Scanner(System.in);
+	
+	System.out.println("Biodata Diri");
+	System.out.print("Nama : ");
+	String a = input.nextLine();
+	System.out.print("Kelas : ");
+	String b = input.nextLine();
+	System.out.print("Nim : ");
+	String c = input.nextLine();
+	System.out.print("Angkatan : ");
+	int d = input.nextInt();
+	
+	System.out.print("Selamat! dengan mematuhi persyaratan yang telah ditetapkan beberapa hari lalu, anda ");
+	System.out.print(a);
+	System.out.print(" kelas ");
+	System.out.print(b);
+	System.out.print(" dengan NIM ");
+	System.out.print(c);
+	System.out.print(" angkatan ");
+	System.out.print(+d);
+	System.out.print(" telah resmi bergabung dengan ISC");
+	
+	}
+}
