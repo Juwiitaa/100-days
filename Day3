@@ -1,0 +1,34 @@
+package day3;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Informatics Study Club (ISC)");
+		System.out.println("OPEN RECRUITMENT");
+		System.out.print("Nama : ");
+		String a = input.nextLine();
+		System.out.print("Kelas : ");
+		String b = input.nextLine();
+		System.out.print("NIM : ");
+		String c = input.nextLine();
+		System.out.print("Angkatan : ");
+		int d = input.nextInt();
+		
+		System.out.println("Setelah membaca aturan yang ditetapkan, apakah anda berkomitmen bergabung dengan ISC?");
+		System.out.print("Masukkan pilihan anda (y/t) : ");
+		char e = input.next().charAt(0);
+		
+	switch (e){
+		case 'y' :
+		System.out.println("Klik Link berikut untuk registrasi :");
+		System.out.print("https://registrasi.com");
+		break;
+		case 't' :
+		System.out.println("Terima kasih atas partisipasi anda");
+		break;
+	default :
+		System.out.println("Input tidak valid. Masukkan 'y' atau 't'.");
+		
+		}
+	}
+}
