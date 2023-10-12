@@ -1,0 +1,17 @@
+package day4;
+public class Main {
+	public static void main(String[] args) {
+		
+		int panjang = 15;
+		int lebar = 10;
+		System.out.print("Panjang suatu persegi panjang adalah : ");
+		System.out.println(panjang);
+		System.out.print("dan mempunyai lebar : ");
+		System.out.println(lebar);
+		
+		System.out.println("Jadi luas persegi panjang tersebut adalah : ");
+		System.out.println(panjang*lebar);
+		System.out.println("dan kelilingnya adalah : ");
+		System.out.println(2*(panjang+lebar));
+	}
+}
