@@ -1,0 +1,14 @@
+package day5;
+public class Main {
+	public static void main(String[] args) {
+	
+		int nilaiPertama = 80;
+		int nilaiKedua = 84;
+		System.out.println("Nilai Pertama : "+nilaiPertama);
+		System.out.println("Nilai Kedua : "+nilaiKedua);
+		
+		System.out.print("Nilai rata-ratanya adalah : ");
+		System.out.print((nilaiPertama+nilaiKedua)/2);
+		
+	}
+}
