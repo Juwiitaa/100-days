@@ -1,0 +1,19 @@
+package day6;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("Nilai Semester 1 : ");
+		int nilaiPertama = input.nextInt();
+		System.out.print("Nilai Semester 2 : ");
+		int nilaiKedua = input.nextInt();
+		
+		int NilaiTotal = nilaiPertama+nilaiKedua;
+		int NilaiRata = NilaiTotal/2;
+		
+		System.out.print("Nilai rata-ratanya adalah : "+NilaiRata);
+		
+		
+	}
+}
