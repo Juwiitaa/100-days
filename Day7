@@ -1,0 +1,34 @@
+package day7;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Masukkan Nama Anda : ");
+		String name = input.nextLine();
+		System.out.print("Masukkan NIM Anda : ");
+		 String pass = input.nextLine();
+		 System.out.println("Berapa umur anda sekarang ?");
+		 System.out.print("Masukkan Tahun Lahir Anda :  ");
+		 short tahun1 = input.nextShort();
+		 System.out.print("Masukkan Tahun Sekarang : ");
+		 short tahun2 = input.nextShort();
+		 
+		 System.out.print("Umur anda sekarang adalah :");
+		 System.out.println(tahun2-tahun1);
+		 
+		 String Dirimu = "yangDulu";
+		 String Dirimu1 = "yangSekarang";
+		 
+		 System.out.println("Apakah dirimu yang dulu masih sama dengan yang sekarang?");
+		 
+		 System.out.println(Dirimu == Dirimu1);
+		 
+		 System.out.print(name+" umur kamu sekarang adalah ");
+		 System.out.print(tahun2-tahun1);
+		 
+		 System.out.print(", Kira-kira dengan umur segitu, udah bisa apa aja nih? xixixi");
+		 
+	}
+}
