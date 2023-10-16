@@ -1,0 +1,44 @@
+package day8;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		int pass = 1234;
+		
+		System.out.println("=====Setor Nilaimu=====");
+		System.out.print("Masukkan Nama Anda : ");
+		String nama = input.nextLine();
+		System.out.println("password anda adalah (1234), harap perhatikan saat memasukkannya!");
+		
+		System.out.print("Masukkan Password Anda : ");
+		int password = input.nextInt();
+		
+		Boolean pass1 = (password==pass);
+			System.out.println(password==pass);
+			
+			//if else adalah bagian dari percabangan, saya memasukkannya sebagai alur pengendali dari boolean//
+			//if akan dieksekusi jika nilai boolean-nya adalah true//
+			//dan jika nilai boolean-nya adalah false,maka else akan dieksekusi//
+		if (pass1) {
+			System.out.print("Masukkan nilai pertama anda : ");
+			int nilai1 = input.nextInt();
+			System.out.print("Masukkan nilai kedua anda : ");
+			int nilai2 = input.nextInt();
+			System.out.print("Masukkan nilai ketiga anda : ");
+			int nilai3 = input.nextInt();
+			
+			int nilaiTotal = nilai1+nilai2+nilai3;
+			int nilaiRata = nilaiTotal/3;
+			
+			System.out.println(nama+" nilai total anda adalah : "+nilaiTotal);
+			System.out.println("dan nilai rata-rata anda adalah : "+nilaiRata);
+			
+			System.out.println("=====Semangat=====");
+			
+		} else {
+			System.out.println("Mohon maaf, kata sandi yang anda masukkan salah !");
+		}	
+	}
+}
