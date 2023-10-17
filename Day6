@@ -9,10 +9,10 @@ public class Main {
 		System.out.print("Nilai Semester 2 : ");
 		int nilaiKedua = input.nextInt();
 		
-		int NilaiTotal = nilaiPertama+nilaiKedua;
-		int NilaiRata = NilaiTotal/2;
+		nilaiPertama += nilaiKedua;
+		nilaiPertama /= 2;
 		
-		System.out.print("Nilai rata-ratanya adalah : "+NilaiRata);
+		System.out.print("Nilai rata-ratanya adalah : "+nilaiPertama);
 		
 		
 	}
