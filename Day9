@@ -1,0 +1,59 @@
+package day9;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("===== Operator Perbandingan =====");
+		System.out.println("Perbandingan umur");
+		
+		byte nilai1 = 7;
+		byte nilai2 = 11;
+		
+		/*
+		==(sama dengan)
+		!=(tidak sama dengan)
+		>(besar)
+		>=(besar sama dengan)
+		<(kecil)
+		<=(kecil sama dengan)
+		*/
+		
+			System.out.println(" Apakah "+nilai1+" == "+nilai2+" ?");
+			System.out.println(nilai1 == nilai2);
+			System.out.println(" Apakah "+nilai1+" != "+nilai2+" ?");
+			System.out.println(nilai1 != nilai2);
+			System.out.println(" Apakah "+nilai1+" > "+nilai2+" ?");
+			System.out.println(nilai1 >  nilai2);
+			System.out.println(" Apakah "+nilai1+" >= "+nilai2+" ?");
+			System.out.println(nilai1 >= nilai2);
+			System.out.println(" Apakah "+nilai1+" < "+nilai2+" ?");
+			System.out.println(nilai1 < nilai2);
+			System.out.println(" Apakah "+nilai1+"  <= "+nilai2+" ?");
+			System.out.println(nilai1 <= nilai2);
+			
+			System.out.println("Untuk membuktikannya, kamu bisa memasukkan umur(angka) sesukamu");
+			
+		System.out.print("Masukkan umur 1 : ");
+		byte umur1 = input.nextByte();
+		System.out.print("Masukkan umur 2 : ");
+		byte umur2 = input.nextByte();
+			
+			System.out.println(" Apakah "+umur1+" == "+umur2+" ?");
+			System.out.println(umur1 == umur2);
+			System.out.println(" Apakah "+umur1+" != "+umur2+" ?");
+			System.out.println(umur1 != umur2);
+			System.out.println(" Apakah "+umur1+" > "+umur2+" ?");
+			System.out.println(umur1 >  umur2);
+			System.out.println(" Apakah "+umur1+" >= "+umur2+" ?");
+			System.out.println(umur1 >= umur2);
+			System.out.println(" Apakah "+umur1+" < "+umur2+" ?");
+			System.out.println(umur1 < umur2);
+			System.out.println(" Apakah "+umur1+"  <= "+umur2+" ?");
+			System.out.println(umur1 <= umur2);
+			
+		System.out.println("===== Semangat =====");
+			
+	}
+}
