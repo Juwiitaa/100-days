@@ -1,0 +1,62 @@
+public class Main {
+	public static void main(String[] args) {
+		
+		//Variabel deklarasi menggunakan 8 tipe data+1 tipe data(Non Primitif)
+		
+		//tipe data string
+		System.out.println("===== STRING =====");
+		String tipe1;
+		tipe1 = "Juwita";
+		System.out.println("Nama : "+tipe1);
+		
+		//tipe data byte
+		System.out.println("===== BYTE =====");
+		byte tipe2;
+		tipe2 = 18;
+			System.out.println("Umur : "+tipe2+" tahun");
+		
+		//tipe data short
+		System.out.println("===== SHORT =====");
+		short tipe3;
+		tipe3 = 2004;
+			System.out.println("Tahun Lahir = "+tipe3);
+			
+		//tipe data integer
+		System.out.println("===== INTEGER =====");
+		int tipe4;
+		tipe4 = 13123;
+			System.out.println("Nomor rumah = "+tipe4);
+		
+		//tipe data long
+		System.out.println("===== LONG =====");
+		long tipe5;
+		tipe5 = 10000;
+			System.out.println("Jarak rumah dari kampus = "+tipe5+" m");
+			
+		//tipe data float
+		System.out.println("===== FLOAT =====");
+		float tipe6;
+		tipe6 = 1.5f;
+			System.out.println("Tinggi badan : "+tipe6+" m");
+			
+		//tipe data double
+		System.out.println("===== DOUBLE =====");
+		double tipe7;
+		tipe7 = 42.5;
+			System.out.println("Berat Badan = "+tipe7);
+			
+		//tipe data char
+		System.out.println("===== CHAR =====");
+		char tipe8;
+		tipe8 = 'P';
+			System.out.println("Jenis Kelamin = "+tipe8);
+			
+		//tipe data boolean
+		System.out.println("===== BOOLEAN =====");
+		boolean tipe9, tipe10;
+		tipe9 = true;
+		tipe10 = false;
+			System.out.print(tipe9 == tipe10);
+
+	}
+}
