@@ -1,0 +1,56 @@
+package day11;
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner (System.in);
+		
+		System.out.print("Masukkan nama = ");
+		String nama = input.nextLine();
+		System.out.print("Masukkan gaji = Rp. ");
+		double gaji = input.nextDouble();
+		
+		String satu = "PNS";
+		String dua = "Buruh";
+		String tiga = "Lainnya";
+		
+		System.out.println("Pilih pekerjaan :");
+		System.out.println("1. PNS");
+		System.out.println("2. Buruh");
+		System.out.println("3. Lainnya");
+		System.out.println("Pilih pekerjaan (1/2/3)");
+		System.out.print("Masukkan nomor = ");
+		char pilih = input.next().charAt(0);
+		input.nextLine();
+		
+			if (pilih  == '1') {
+				System.out.println("Pekerjaan anda adalah PNS dengan gaji Rp. "+gaji+"/bulan dan akan dikenakan pajak sebesar 10%");
+				double pajak = 0.1*gaji;
+				System.out.println("10% dari gaji anda adalah sebesar = Rp. "+pajak);
+				double gajiBersih = gaji-pajak;
+				System.out.println(nama+", Jadi anda memiliki gaji bersih Rp. "+gajiBersih);
+	
+ 			} else if (pilih == '2') {
+				System.out.println("Pekerjaan anda adalah Buruh dengan gaji Rp. "+gaji+"/bulan dan akan mendapatkan tunjangan sebesar 10%");
+				double tunjangan = 0.1*gaji;
+				System.out.println("10% dari gaji anda adalah sebesar = Rp. "+tunjangan);
+				double gajiBersih = gaji+tunjangan;
+				System.out.println(nama+", Jadi anda memiliki gaji bersih Rp. "+gajiBersih);
+		
+ 			} else if (pilih == '3') {
+ 				System.out.print("Masukkan pekerjaan anda = ");
+ 				String lain = input.nextLine();
+ 				System.out.println("Pekerjaan anda adalah "+lain+" dengan gaji Rp. "+gaji+"/bulan dan akan dikenakan pajak sebesar 5%");
+ 				double pajak = 0.05*gaji;
+ 				System.out.println("5% dari gaji anda adalah sebesar = Rp. "+pajak);
+ 				double gajiBersih = gaji-pajak;
+ 				System.out.println(nama+", Jadi anda memiliki gaji bersih Rp. "+gajiBersih);
+ 	
+ 			} else if (pilih > '3') {
+ 				System.out.println("Mohon maaf, nomor yang anda pilih tidak terdapat di dalam pilihan");
+ 		}
+ 			
+		System.out.println("===== Semangat =====");		
+	}
+}
