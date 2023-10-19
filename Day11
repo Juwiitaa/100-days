@@ -47,7 +47,7 @@ public class Main {
  				double gajiBersih = gaji-pajak;
  				System.out.println(nama+", Jadi anda memiliki gaji bersih Rp. "+gajiBersih);
  	
- 			} else if (pilih > '3') {
+ 			} else {
  				System.out.println("Mohon maaf, nomor yang anda pilih tidak terdapat di dalam pilihan");
  		}
  			
