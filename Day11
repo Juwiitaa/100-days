@@ -38,7 +38,7 @@ public class Main {
 				double gajiBersih = gaji+tunjangan;
 				System.out.println(nama+", Jadi anda memiliki gaji bersih Rp. "+gajiBersih);
 		
- 			} else if (pilih == '3') {
+ 			} else {
  				System.out.print("Masukkan pekerjaan anda = ");
  				String lain = input.nextLine();
  				System.out.println("Pekerjaan anda adalah "+lain+" dengan gaji Rp. "+gaji+"/bulan dan akan dikenakan pajak sebesar 5%");
@@ -47,8 +47,6 @@ public class Main {
  				double gajiBersih = gaji-pajak;
  				System.out.println(nama+", Jadi anda memiliki gaji bersih Rp. "+gajiBersih);
  	
- 			} else {
- 				System.out.println("Mohon maaf, nomor yang anda pilih tidak terdapat di dalam pilihan");
  		}
  			
 		System.out.println("===== Semangat =====");		
