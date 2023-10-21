@@ -1,0 +1,29 @@
+package day13;
+import java.util.Scanner;
+public class main{
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Masukkan harga PC gaming yang hendak dibeli = ");
+        double pcGaming = input.nextDouble();
+        
+        System.out.print("Masukkan penghasilan per bulan = ");
+        double penghasilan = input.nextDouble();
+
+        System.out.print("Masukkan tagihan rumah per bulan = ");
+        double biayaRumah = input.nextDouble();
+        
+        System.out.print("Masukkan biaya anak pertama = ");
+        double anakPertama = input.nextDouble()
+        
+        System.out.print("Masukkan biaya 2 anak lainnya (gabungan) = ");
+        double anakLainnya = input.nextDouble();
+
+        double tabungan = penghasilan - biayaRumah - anakPertama - anakLainnya;   
+        double bulan = pcGaming / tabungan;
+        double tahun = bulan/12;
+
+        System.out.println("Jadi waktu yang diperlukan Sambo untuk membeli PC Gaming adalah " +tahun+ " tahun.");
+    }
+}
