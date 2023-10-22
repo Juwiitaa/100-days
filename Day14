@@ -1,0 +1,50 @@
+package day14;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("=== Wahana Unsulbar ===");
+        System.out.println("Selamat datang di laman wahana Unsulbar, untuk mendapatkan tiketnya daftarkan dirimu sekarang!");
+        
+        System.out.print("Masukkan nama anda : ");
+        String nama = input.nextLine();
+        
+        System.out.print("Masukkan alamat anda : ");
+        String alamat = input.nextLine();
+        
+        System.out.println("Untuk menjaga keamanan pengunjung, jenis wahana akan tergantung umur pengunjung");
+        
+        System.out.print("Masukkan umur anda : ");
+        byte umur = input.nextByte();
+        
+        if (umur >= 7 && umur <= 12) {
+            System.out.println("Wahana anak-anak lebih cocok untuk anda");
+            
+        } else if (umur >= 13 && umur <= 19) {
+            System.out.println("Wahana remaja lebih cocok untuk anda");
+            
+        } else if (umur >= 20 && umur <= 50) {
+            System.out.println("Wahana dewasa akan lebih asyik, hehe");
+            
+        } else {
+            System.out.println("Anda juga bisa menikmati wahana di taman mini wahana, ada kopi gratis loh, hehe");
+        }
+        
+        System.out.println("Apakah anda seorang Mahasiswa di UNSULBAR? (y/t) ");
+        System.out.print("Masukkan jawaban anda : ");
+        char pilih = input.next().charAt(0);
+        
+        if (pilih == 'y') {
+            System.out.println("Anda berhak mendapatkan potongan harga 10%");
+            
+        } else {
+            System.out.println("Tenang saja, kamu tetap dapat menikmati semua wahana kok, hehe");
+        }
+       System.out.println("Untuk registrasi lebih lanjut,klik link di bawah ini!");
+       System.out.println("https://registrasihehe.com.");
+       
+       System.out.println("===== Semangat =====");
+    }
+}
