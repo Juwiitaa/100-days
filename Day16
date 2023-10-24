@@ -1,0 +1,64 @@
+package day16;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		//Nama program hari ini (day16)
+		System.out.println("===== Hitung Nilaimu =====");
+		
+		//(menggunakan tipe data String) Masukkan namamu 
+		System.out.print("Nama : ");
+			String nama = input.nextLine();
+		//(Menggunakan tipe data String) Masukkan kelasmu
+		System.out.print("Kelas : ");
+			String kelas = input.nextLine();
+		//(Menggunakan tipe data String) Masukkan NIM mu
+		System.out.print("NIM : ");
+			String nim = input.nextLine();
+		//(Menggunakan tipe data Short) Masukkan tahun angkatanmu
+		System.out.print("Angkatan : ");
+			short angkatan = input.nextShort();
+			
+		//output dari penginputan nama, kelas, NIM dan tahun angkatan.
+		System.out.println("Hii "+nama+", kamu dari kelas "+kelas+" dengan NIM "+nim+" angkatan "+angkatan+" kan??. Ayo hitung nilaimu dengan menyetor nilai UTS dan UAS mu");
+		
+		//(Menggunakan tipe data byte) Masukkan nilai UTS mu
+		System.out.print("Masukkan nilai UTS : ");
+			byte nilai1 = input.nextByte();
+		//(Menggunakan tipe data byte) Masukkan nilai UAS mu
+		System.out.print("Masukkan nilai UAS : ");
+			byte nilai2 = input.nextByte();
+			
+			//(Menggunakan tipe data integer) hasil dari penjumlahan nilai UTS dengan nilai UAS
+			int nilaiTotal = nilai1 + nilai2;
+			//(Menggunakan tipe data integer) hasil dari pembagian nilaiTotal dengan 2
+			int nilaiRatarata = nilaiTotal / 2;
+			
+		//Menampilkan hasil
+		System.out.println("Nilai Totalmu adalah "+nilaiTotal+" dengan Rata-rata "+nilaiRatarata);
+		
+		//Percabangan / Kondisi dari nilaiRatarata
+		if (nilaiRatarata > 85 && nilaiRatarata <= 100) {
+			System.out.println("nilai Semester 1 mu A. Wahh selamat yah, tetap semangat dan jangan lengah!!.");
+			
+		} else if (nilaiRatarata > 75 && nilaiRatarata <= 85) {
+			System.out.println("Nilai Semester 1 mu B. Wahhh selamat yah, ayo lebih semangat lagi agar nilaimu naik, hehehe");
+			
+		} else if (nilaiRatarata > 65 && nilaiRatarata <= 75 ) {
+			System.out.println("Nilai Semester 1 mu C. Ayo lebih semangat lagi agar nilaimu naik, hehehe");
+			
+		} else if (nilaiRatarata > 50 && nilaiRatarata <= 65) {
+			System.out.println("Nilai Semester 1 mu D. Yah mungkin kamu kurang semangat, ayo lebih semangat lagi dan buktikan kalau kamu bisa");
+			
+		} else {
+			System.out.println("Nilai Semester 1 mu E (Error). Ayo lebih semangat lagiii!!!");
+		}
+		
+			System.out.println("===== Semangat =====");
+		
+	}
+}
