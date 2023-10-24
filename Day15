@@ -1,0 +1,118 @@
+package day15;
+public class Main {
+	public static void main(String[] args) {
+		
+		System.out.println("===== Operator Logika =====");
+		
+		System.out.println("==== AND (&&) ====");
+		System.out.println("= BYTE =");
+		byte umur1 = 22;
+		byte umur2 = 24;
+		
+		System.out.println("Jika 22 <= 24 && 22 <= 24 hasilnya adalah "+(umur1 <= umur2 && umur1 <= umur2 ));
+		System.out.println("Jika 22 == 24 && 22 <= 24 hasilnya adalah "+(umur1 == umur2 && umur1 <= umur2));
+		System.out.println("Jika 22 >= 24 && 22 >= 24 hasilnya adalah "+(umur1 >= umur2 && umur1 >= umur2));
+		System.out.println("Jika 22 == 24 && 22 == 24 hasilnya adalah "+(umur1 == umur2 && umur1 >= umur2));
+		
+		System.out.println("= SHORT =");
+		short nilai1 = 180;
+		short nilai2 = 175;
+		
+		System.out.println("Jika 180 <= 175 && 180 <= 175 hasilnya adalah "+(nilai1 <= nilai2 && nilai1 <= nilai2 ));
+		System.out.println("Jika 180 == 175 && 180 <= 175 hasilnya adalah "+(nilai1 == nilai2 && nilai1 <= nilai2));
+		System.out.println("Jika 180 >= 175 && 180 >= 175 hasilnya adalah "+(nilai1 >= nilai2 && nilai1 >= nilai2));
+		System.out.println("Jika 180 == 175 && 180 >= 175 hasilnya adalah "+(nilai1 == nilai2 && nilai1 >= nilai2));
+		
+		System.out.println("= INTEGER =");
+		int angka1 = 1001;
+		int angka2 = 1010;
+		
+		System.out.println("Jika 1001 == 1001 && 1010 == 1010 hasilnya adalah "+(angka1 == angka1 && angka2 == angka2 ));
+		System.out.println("Jika 1001 == 1010 && 1001 <= 1010 hasilnya adalah "+(angka1 == angka2 && angka1 <= angka2));
+		System.out.println("Jika 1001 <= 1010 && 1001 <= 1010 hasilnya adalah "+(angka1 <= angka2 && angka1 <= angka2));
+		System.out.println("Jika 1001 == 1010 && 1001 >= 1010 hasilnya adalah "+(angka1 == angka2 && angka1 >= angka2));
+		
+		System.out.println("= LONG =");
+		long hal1 = 12000;
+		long hal2 = 12000;
+		
+		System.out.println("Jika 12000 == 12000 && 12000 == 12000 maka hasilnya adalah "+(hal1 == hal1 && hal2 == hal2 ));
+		System.out.println("Jika 12000 == 12000 && 12000 < 12000 maka hasilnya adalah "+(hal1 == hal2 && hal1 < hal2));
+		System.out.println("Jika 12000 < 12000 && 12000 <= 12000 maka hasilnya adalah "+(hal1 < hal2 && hal1 <= hal2));
+		System.out.println("Jika 12000 == 12000 && 12000 >= 12000 maka hasilnya adalah "+(hal1 == hal2 && hal1 >= hal2));
+		
+		System.out.println("= CHAR =");
+		char gender1 = 'P';
+		char gender2 = 'L';
+		
+		System.out.println("Jika P <= L && P <= L maka hasilnya adalah "+(gender1 <= gender2 && gender1 <= gender2 ));
+		System.out.println("Jika P == P && P != L maka hasilnya adalah "+(gender1 == gender1 && gender1 != gender2));
+		System.out.println("Jika P != L && P != L maka hasilnya adalah "+(gender1 != gender2 && gender1 != gender2));
+		System.out.println("Jika P == L && P == L maka hasilnya adalah "+(gender1 == gender2 && gender1 == gender2));
+		
+		System.out.println("==== OR (||) ====");
+		
+		System.out.println("= BYTE =");
+		
+		System.out.println("Jika 22 <= 24 || 22 <= 24 maka hasilnya adalah "+(umur1 <= umur2 || umur1 <= umur2 ));
+		System.out.println("Jika 22 == 24 || 22 <= 24 maka hasilnya adalah "+(umur1 == umur2 || umur1 <= umur2));
+		System.out.println("Jika 22 >= 24 || 22 >= 24 maka hasilnya adalah "+(umur1 >= umur2 || umur1 >= umur2));
+		System.out.println("Jika 22 == 24 || 22 >= 24 maka hasilnya adalah "+(umur1 == umur2 || umur1 >= umur2));
+		
+		System.out.println("= SHORT =");
+		
+		System.out.println("Jika 180 <= 175 || 180 <= 175 maka hasilnya adalah "+(nilai1 <= nilai2 || nilai1 <= nilai2 ));
+		System.out.println("Jika 180 == 175 || 180 <= 175 maka hasilnya adalah "+(nilai1 == nilai2 || nilai1 <= nilai2));
+		System.out.println("Jika 180 >= 175 || 180 >= 175 maka hasilnya adalah "+(nilai1 >= nilai2 || nilai1 >= nilai2));
+		System.out.println("Jika 180 == 180 || 180 >= 175 maka hasilnya adalah "+(nilai1 == nilai1 && nilai1 >= nilai2));
+		
+		System.out.println("= INTEGER =");
+		
+		System.out.println("Jika 1001 == 1001 || 1010 == 1010 maka hasilnya adalah "+(angka1 == angka1 || angka2 == angka2 ));
+		System.out.println("Jika 1001 == 1010 || 1001 <= 1010 maka hasilnya adalah "+(angka1 == angka2 || angka1 <= angka2));
+		System.out.println("Jika 1001 <= 1010 || 1001 <= 1010 maka hasilnya adalah "+(angka1 <= angka2 || angka1 <= angka2));
+		System.out.println("Jika 1001 == 1010 || 1001 >= 1010 maka hasilnya adalah "+(angka1 == angka2 || angka1 >= angka2));
+		
+		System.out.println("= LONG =");
+		
+		System.out.println("Jika 12000 == 12000 || 12000 == 12000 maka hasilnya adalah "+(hal1 == hal1 || hal2 == hal2 ));
+		System.out.println("Jika 12000 == 12000 || 12000 < 12000 maka hasilnya adalah "+(hal1 == hal2 || hal1 < hal2));
+		System.out.println("Jika 12000 < 12000 || 12000 <= 12000 maka hasilnya adalah "+(hal1 < hal2 || hal1 <= hal2));
+		System.out.println("Jika 12000 == 12000 || 12000 >= 12000 maka hasilnya adalah "+(hal1 == hal2 || hal1 >= hal2));
+		
+		System.out.println("= CHAR =");
+		
+		System.out.println("Jika P <= L || P <= L maka hasilnya adalah "+(gender1 <= gender2 || gender1 <= gender2 ));
+		System.out.println("Jika P == P || P ! = L maka hasilnya adalah "+(gender1 == gender1 || gender1 != gender2));
+		System.out.println("Jika P != L || P != L maka hasilnya adalah "+(gender1 != gender2 || gender1 != gender2));
+		System.out.println("Jika P == L || P == L maka hasilnya adalah "+(gender1 == gender2 || gender1 == gender2));
+		
+		System.out.println("==== NOT/NEGASI (!) ====");
+		
+		System.out.println("= BYTE =");
+		
+		System.out.println("Jika ! dari 22 <= 24 maka hasilnya adalah "+!(umur1 <= umur2));
+		System.out.println("Jika ! dari 24 == 22 maka hasilnya adalah "+!(umur2 == umur2));
+		
+		System.out.println("= SHORT =");
+		
+		System.out.println("Jika ! dari 180 <= 175 maka hasilnya adalah "+!(nilai1 <= nilai2));
+		System.out.println("Jika ! dari 180 == 175 maka hasilnya adalah "+!(nilai1 == nilai2));
+		
+		System.out.println("= INTEGER =");
+		
+		System.out.println("Jika ! dari 1001 == 1010 maka hasilnya adalah "+!(angka1 == angka2));
+		System.out.println("Jika ! dari 1001 <= 1010 maka hasilnya adalah "+!(angka1 <= angka2));
+		
+		System.out.println("= LONG =");
+		
+		System.out.println("Jika ! dari 12000 != 12000 maka hasilnya adalah "+!(hal1 != hal1));
+		System.out.println("Jika ! dari 12000 == 12000 maka hasilnya adalah "+!(hal1 == hal2));
+		
+		System.out.println("= CHAR =");
+		
+		System.out.println("Jika ! dari P == P maka hasilnya adalah "+! (gender1 == gender1));
+		System.out.println("Jika ! dari P != L maka hasilnya adalah "+!(gender1 != gender2));
+		
+	}
+}
