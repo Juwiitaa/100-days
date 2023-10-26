@@ -1,0 +1,22 @@
+package day18;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("===== Deret angka kelipatan tiga =====");
+		
+		System.out.print("Masukkan angka untuk memulai : ");
+		int angka = input.nextInt();
+		System.out.print("Masukkan angka untuk mengakhiri : ");
+		int angka2 = input.nextInt();
+		
+		System.out.print("deret angka kelipatan 3 di antaranya adalah = ");
+		
+		for (int a = angka; a <= angka2; a+=3 ) {
+			
+			System.out.print(a+",");
+		}
+	}
+}
