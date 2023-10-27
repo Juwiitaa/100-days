@@ -1,0 +1,30 @@
+package day18;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("===== Deret angka kelipatan tiga =====");
+		
+		System.out.print("Masukkan angka untuk memulai : ");
+		int angka = input.nextInt();
+		System.out.print("Masukkan angka untuk mengakhiri : ");
+		int angka2 = input.nextInt();
+		
+		int jumlah = 0;
+		
+		System.out.println("deret angka kelipatan 3 di antaranya adalah = ");
+		
+		while (angka <= angka2 ) {
+			
+			System.out.println(angka+", ");
+			angka += 3;
+			jumlah++;
+		}
+		
+		System.out.println("jumlah angka kelipatan 3 diantara angka tersebut adalah "+jumlah);
+		
+		System.out.println("===== Semangat =====");
+	}	
+}
