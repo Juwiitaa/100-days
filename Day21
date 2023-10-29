@@ -1,0 +1,37 @@
+package day21;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("=====  Jumlah Tanggal Bulan =====");
+		
+		System.out.println("Pilih bulan (1-12) : ");
+		System.out.print("Masukkan jawaban : ");
+		int pilih = input.nextInt();
+		
+		byte jumlah = 0;
+		
+		if (pilih == 1 || pilih == 3 || pilih == 5 || pilih == 7 || pilih == 8 || pilih == 10 || pilih == 12) {
+			for (int a = 1; a <=31; a++) {
+				System.out.print(a+",");
+				jumlah++;
+			}
+		} else if (pilih == 2) {
+			for (int a = 1; a <= 28; a++) {
+				System.out.print(a+",");
+				jumlah++;
+			}
+		} else if (pilih == 4 || pilih == 6 || pilih == 9 || pilih == 11) {
+			for (int a = 1; a <= 30; a++) {
+				System.out.print(a+",");
+				jumlah++;
+			}
+		} else {
+			System.out.println("Pilihan anda tidak valid");
+		}	
+		System.out.println(" Jumlah hari di bulan tersebut adalah "+jumlah+" hari");
+		System.out.println("===== Semangat =====");
+	}
+}
