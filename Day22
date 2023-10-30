@@ -12,16 +12,20 @@ public class Main {
 		System.out.print("Masukkan area pilihanmu (A/B/C) : ");
 		char area = input.next().charAt(0);
 		
-		System.out.print("Masukkan jenis buku pilihanmu (Novel/Komik/Majalah) : ");
-		String jenisBuku = input.next();
+		System.out.println("jenis buku pilihanmu");
+		System.out.println("1. Novel");
+		System.out.println("2. Komik");
+		System.out.println("3. Majalah");
+		System.out.print("Masukkan jawabanmu (1/2/3) : ");
+		char jenisBuku = input.next().charAt(0);
 		
-		if (area == 'A' && jenisBuku.equals("Novel")) {
+		if (area == 'A' && jenisBuku == '1') {
 			System.out.println("Benar");
 			
-		} else if (area == 'B' && jenisBuku.equals("Komik")) {
+		} else if (area == 'B' && jenisBuku == '2') {
 			System.out.println("Benar");
 			
-		} else if (area == 'C' && jenisBuku.equals("Majalah")) {
+		} else if (area == 'C' && jenisBuku == '3') {
 			System.out.println("Benar");
 			
 		} else {
