@@ -1,0 +1,36 @@
+package day22;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("===== Perpustakaan =====");
+		
+		System.out.println("Selamat datang di perpustakaan, temukan area pengambilan yang cocok untukmu");
+		
+		System.out.print("Masukkan area pilihanmu (A/B/C) : ");
+		char area = input.next().charAt(0);
+		
+		System.out.print("Masukkan jenis buku pilihanmu (Novel/Komik/Majalah) : ");
+		String jenisBuku = input.next();
+		
+		if (area == 'A' && jenisBuku.equals("Novel")) {
+			System.out.println("Benar");
+			
+		} else if (area == 'B' && jenisBuku.equals("Komik")) {
+			System.out.println("Benar");
+			
+		} else if (area == 'C' && jenisBuku.equals("Majalah")) {
+			System.out.println("Benar");
+			
+		} else {
+			System.out.println("Salah");
+			System.out.println("pilihan anda tidak valid dan perhatikan penulisan hurufnya (huruf kapital dan huruf kecil)");
+			
+		}
+		
+		System.out.println("===== Semangat =====");
+		
+	}
+}
