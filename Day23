@@ -1,0 +1,38 @@
+package day23;
+
+import java.util.Scanner;
+
+public class GajiBersih {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Masukkan nama : ");
+        String nama = input.nextLine();
+        System.out.print("Masukkan penghasilan bulanan : ");
+        double penghasilan = input.nextDouble();
+        System.out.print("Masukkan pekerjaan (petani/PNS) : ");
+        String pekerjaan = input.next();
+
+        double bantuan = 0;
+        double pajak = 0;
+        
+        if (penghasilan > 3000000 && penghasilan <= 10000000) {
+            pajak = penghasilan*0.05;
+        } else {
+            pajak = penghasilan*0.15;
+        }
+
+        if (pekerjaan.equals("petani")) {
+            bantuan = 1000000;
+        } else if (pekerjaan.equals("PNS")) {
+            bantuan = 0;
+        } else {
+        	bantuan = 200000;
+        }
+        double gajiBersih = penghasilan-pajak+ bantuan;
+
+	System.out.println("Jadi gaji bersih = "+gajiBersih);
+	
+    }
+}
