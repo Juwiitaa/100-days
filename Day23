@@ -21,6 +21,8 @@ public class GajiBersih {
             pajak = penghasilan*0.05;
         } else if (penghasilan > 10000000) {
             pajak = penghasilan*0.15;
+        } else {
+            pajak = 0;
         }
 
         if (pekerjaan.equals("petani")) {
