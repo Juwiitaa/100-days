@@ -1,0 +1,150 @@
+package day24;
+public class Main {
+	public static void main(String[] args) {
+		
+		System.out.println("===== Toko Buah Sejahtera =====");
+		
+		//banyak belanjaan
+		int apelkg = 20;
+		int anggurkg = 18;
+		int rambutankg = 17;
+		int jerukkg = 29;
+		
+		//harga buah-buahan dalam satuan kg
+		int apel = 1000/200;
+		apel *= 5000;
+		int anggur = 1000/100;
+		anggur *= 3000;
+		int rambutan = 15000;
+		int jeruk = 45000/3;
+		
+		//jumlah harga
+		double hargaApel = apel*20;
+		double hargaAnggur = anggur*18;
+		double hargaRambutan = rambutan*17;
+		double hargaJeruk = jeruk*29;
+		
+		double harga = hargaApel + hargaAnggur + hargaRambutan + hargaJeruk;
+		
+		System.out.println("1). Jika harga apel sebanyak 200 gram adalah Rp.5000, maka harga untuk 1 kg apel adalah : Rp."+apel);
+		System.out.println("2). Jika harga anggur sebanyak 100 gram adalah Rp. 3000, maka harga untuk 1 kg anggur adalah : Rp."+anggur);
+		System.out.println("3). Harga rambutan sebanyak 1 kg adalah : Rp."+rambutan);
+		System.out.println("4). Jika harga jeruk sebanyak 3 kg adalah Rp.45000, maka harga untuk 1 kg adalah : Rp."+jeruk);
+		System.out.println("===== Total Harga =====");
+		System.out.println("Ucup membeli apel sebanyak 20 kg, maka harga yang harus ia bayar adalah sebanyak : Rp."+hargaApel);
+		System.out.println("Ucup membeli anggur sebanyak 18 kg, maka harga yang harus ia bayar adalah sebanyak : Rp."+hargaAnggur);
+		System.out.println("Ucup membeli rambutan sebanyak 17 kg, maka harga yang harus ia bayar adalah sebanyak : Rp."+hargaRambutan);
+		System.out.println("Ucup membeli jeruk sebanyak 29 kg, maka harga yang harus ia bayar adalah sebanyak : Rp."+hargaJeruk);
+		System.out.println("Jadi total harga yang harus ia bayar adalah : Rp."+harga);
+		
+		//menghitung bonus setiap 5 kg
+		int bonusApel1 = apelkg/5;
+		int bonusAnggur1= anggurkg/5;
+		int bonusRambutan1 = rambutankg/5;
+		int bonusJeruk1 = jerukkg/5;
+		
+		double bonusApel = bonusApel1*0.5;
+		double bonusAnggur = bonusAnggur1*0.5;
+		double bonusRambutan = bonusRambutan1*0.5;
+		double bonusJeruk = bonusJeruk1*0.5;
+		
+		System.out.println("===== Total Bonus =====");
+		System.out.println("Total bonus buah apel adalah : "+bonusApel+", Jadi total apel yang dibeli Ucup adalah : "+(apelkg+bonusApel));
+		System.out.println("Total bonus buah anggur adalah : "+bonusAnggur+", Jadi total anggur yang dibeli Ucup adalah : "+(anggurkg+bonusAnggur));
+		System.out.println("Total bonus buah rambutan adalah : "+bonusRambutan+", Jadi total rambutan yang dibeli Ucup adalah : "+(rambutankg+bonusRambutan));
+		System.out.println("Total bonus buah jeruk adalah : "+bonusJeruk+", Jadi total jeruk yang dibeli Ucup adalah : "+(jerukkg+bonusJeruk));
+		
+		//menghitung bonus untuk buah yag melebihi 20 kg
+		double diskon = harga*0.002;
+		double totalHargaAkhir = harga-diskon;
+		System.out.println("karena pembelian buah melebihi 20 kg, maka mendapatkan diskon sebanyak 0.2%, jadi total diskon adalah : "+diskon);
+		
+		System.out.println("Jadi harga yang harus di bayar Ucup adalah sebanyak : "+totalHargaAkhir);
+		
+		System.out.println("===== Kesimpulan =====");
+		System.out.println("Harga 20 kg apel = "+hargaApel);
+		System.out.println("Harga 18 kg anggur ="+hargaAnggur);
+		System.out.println("Harga 17 kg rambutan = "+hargaRambutan);
+		System.out.println("Harga 29 kg jeruk = "+hargaJeruk);
+		System.out.println("Harga sebelum diskon = "+harga);
+		System.out.println("Total diskon = "+diskon);
+		System.out.println("Total bonus = "+(bonusApel+bonusAnggur+bonusRambutan+bonusJeruk));
+		System.out.println("Harga akhir adalah = "+totalHargaAkhir);
+		System.out.println("===== Semangat =====");
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
