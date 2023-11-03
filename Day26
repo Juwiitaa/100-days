@@ -20,7 +20,9 @@ public class Main {
 				jumlah++;
 				
 		 	} while (angka1 <= angka2) ;
-		 		System.out.println("Jumlah angka kelipatan 2 diantara angka tersebut adalah "+(jumlah-1));
+		 		System.out.println("Jumlah angka kelipatan 2 diantara angka tersebut adalah "+(jumlah-1)+".");
+		 		
+		 		System.out.println("===== Semangat =====");
 		 			 
 	}
 }
