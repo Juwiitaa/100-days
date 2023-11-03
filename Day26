@@ -1,0 +1,26 @@
+package day26;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("===== deret angka kelipatan 2 =====");
+		 
+		 	System.out.print("Masukkan angka awal : ");
+		 	int angka1 = input.nextInt();
+		 	System.out.print("Masukkan angka akhir : ");
+		 	int angka2 = input.nextInt();
+		 	
+		 	int jumlah = 0;
+		 	
+		 	do {
+		 		System.out.print(angka1+", ");
+				angka1 += 3;
+				jumlah++;
+				
+		 	} while (angka1 <= angka2) ;
+		 		System.out.println("Jumlah angka kelipatan 2 diantara angka tersebut adalah "+(jumlah-1));
+		 			 
+	}
+}
