@@ -1,0 +1,41 @@
+package day27;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("===== Berapa Umurmu Sekarang ? =====");
+		
+		System.out.print("Masukkan tahun sekarang : ");
+		int tahun1 = input.nextInt();
+		System.out.print("Masukkan tahun lahirmu : ");
+		int tahun2 = input.nextInt();
+		System.out.print("Masukkan bulan sekarang (1-12) : ");
+		int bulan1 = input.nextInt();
+		System.out.print("Masukkan bulan lahirmu (1-12) : ");
+		int bulan2 = input.nextInt();
+		
+		byte umur = 0;
+		
+		for (int a = tahun1; a >= tahun2; a--) {
+			umur++;
+			System.out.println(a);
+			
+		}
+		
+			if (bulan1 < bulan2) {
+				System.out.println("Sekarang umurmu masih "+(umur-2)+" tahun. tinggal tunggu bulannya saja ya, lalu umurmu akan genap "+(umur-1)+" tahun.");
+		
+			} else if (bulan1 >= bulan2) {
+				System.out.println("Sekarang umurmu adalah "+(umur-1)+" tahun.");
+				
+			} else {
+				System.out.println("Pilihan yang kamu masukkan tidak valid");
+				
+			}
+				
+			System.out.println("===== Semangat =====");
+			
+	}
+}
