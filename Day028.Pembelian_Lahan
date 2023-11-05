@@ -2,7 +2,7 @@ package day28;
 public class Main {
 	public static void main(String[] args) {
 		
-		long luasLahan = 10*15;
+		long luasLahn = 10*15;
 		luasLahan *= 30;
 		long hargaKeseluruhan = luasLahan * 500000;
 		
