@@ -20,7 +20,7 @@ public class Main {
 			
 			double angkaHasil = 0;
 			
-			if (satuanAwal == "m") {
+			if (satuanAwal.equals("m")) {
 				if (satuanAkhir.equals("mm")) {
 					angkaHasil = angka*1000;
 				} else if (satuanAkhir.equals("cm")){
