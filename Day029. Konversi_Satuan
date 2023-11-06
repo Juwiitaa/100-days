@@ -1,0 +1,73 @@
+package day29;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("===== Konversi Satuan =====");
+		
+		while(true) {
+			
+			System.out.print("Masukkan angka : ");
+			double angka = input.nextDouble();
+			input.nextLine();
+			
+			System.out.print("Masukkan satuan dari angka (m/cm/km) : ");
+			String satuanAwal = input.next();
+			System.out.print("Pilih satuan untuk mengonversi satuan awal (mm/cm/km) : ");
+			String satuanAkhir = input.next();
+			
+			double angkaHasil = 0;
+			
+			if (satuanAwal == "m") {
+				if (satuanAkhir.equals("mm")) {
+					angkaHasil = angka*1000;
+				} else if (satuanAkhir.equals("cm")){
+					angkaHasil = angka*100;
+				} else if (satuanAkhir.equals("km")) {
+					angkaHasil = angka/1000;
+				} else {
+				}
+			System.out.println("Konversi nilai "+angka+" dari satuan "+satuanAwal+" ke satuan "+satuanAkhir+" adalah "+angkaHasil+" "+satuanAkhir);
+			
+			} else if (satuanAwal.equals("cm")) {
+				if (satuanAkhir.equals("mm")) {
+					angkaHasil = angka*10;
+				} else if (satuanAwal.equals("cm")) {
+					angkaHasil = angka*1;
+				} else if (satuanAwal.equals("km")) {
+					angkaHasil = angka/100000;
+				} else {
+				}
+			System.out.println("Konversi nilai "+angka+" dari satuan "+satuanAwal+" ke satuan "+satuanAkhir+" adalah "+angkaHasil+" "+satuanAkhir);
+			
+			} else if (satuanAwal.equals("km")) {
+				if (satuanAkhir.equals("mm")) {
+					angkaHasil = angka*1000000;
+				} else if (satuanAkhir.equals("cm")) {
+					angkaHasil = angka*100000;
+				} else if (satuanAkhir.equals("km")) {
+					angkaHasil = angka*1;
+				} else {
+				}
+				System.out.println("Konversi nilai "+angka+" dari satuan "+satuanAwal+" ke satuan "+satuanAkhir+" adalah "+angkaHasil+" "+satuanAkhir);
+				
+			} else {
+				System.out.println("Pilihan anda tidak valid, silahkan pilih kembali!");
+			}
+			
+			System.out.println("Anda masih ingin mengonversikan satuan ?\n1. ya ( y)\n2. tidak (t)");
+			System.out.print("Masukkan jawaban : ");
+			char pilih = input.next().charAt(0);
+			
+			if (pilih == 'y') {
+				
+			} else {
+				System.out.println("Finish");
+				break;
+			}
+		
+		}
+	}
+}
