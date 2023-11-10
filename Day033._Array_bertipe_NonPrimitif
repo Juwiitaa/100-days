@@ -1,0 +1,36 @@
+package day33;
+public class Main {
+	public static void main(String[] args) {
+		
+		System.out.println("===== Array bertipe non/primitif =====");
+		
+		String[] hari = { "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"};
+		
+		System.out.println(hari[0]);
+        System.out.println(hari[1]);
+        System.out.println(hari[2]);
+        System.out.println(hari[3]);
+        System.out.println(hari[4]);
+        System.out.println(hari[5]);
+        
+        hari[0] = "Minggu";
+        
+        System.out.println("=====");
+        
+        System.out.println(hari[0]);
+        System.out.println(hari[1]);
+        System.out.println(hari[2]);
+        System.out.println(hari[3]);
+        System.out.println(hari[4]);
+        System.out.println(hari[5]);
+        
+        System.out.println("===== Menampilkan nilai array menggunakan for loop =====");
+        
+        for (String hari2 : hari) {
+        	System.out.println(hari2);
+        }
+        
+        System.out.println("===== Semangat =====");
+		
+	}
+}
