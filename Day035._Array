@@ -1,0 +1,30 @@
+package day35;
+import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) {
+        
+        System.out.println("===== Menambah nilai array =====");
+        String[] array = {"Nilai1", "Nilai2", "Nilai3"};
+
+        System.out.println("\n== sebelum ditambah ==");
+        for (String nilai : array) {
+            System.out.println(nilai);
+        }
+        System.out.println(Arrays.toString(array));
+        
+        String[] newArray = new String[array.length + 2];
+        System.arraycopy(array, 0, newArray, 0, array.length);
+        newArray[array.length] = "Nilai4";
+        newArray[array.length+1] = "Nilai5";
+
+        System.out.println("\n== setelah ditambah ==");
+        for (String nilai : newArray) {
+            System.out.println(nilai);
+        }
+        System.out.println(Arrays.toString(newArray));
+        
+        System.out.println("\n===== Semangat =====");
+
+    
+    }
+}
