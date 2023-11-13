@@ -1,0 +1,50 @@
+package day36;
+import java.util.Arrays;
+public class Main {
+	public static void main(String[] args) {
+		
+		System.out.println("===== Menambah Elemen Array =====");
+		
+		System.out.println("\n== Menambah 1 elemen ==\n= Sebelum ditambah =");
+		
+		int[] angka1 = {1,2,3,4,5};
+		System.out.println(Arrays.toString(angka1));
+		
+		int tambah = 6;
+		
+		int[] angka2 = new int [angka1.length+1];
+		
+		for (int a = 0; a < angka1.length; a++) {
+			angka2[a] = angka1[a];
+		}
+		
+		angka2[angka1.length] = tambah;
+		
+		System.out.println("= Setelah ditambah =");
+		System.out.println(Arrays.toString(angka2));
+		
+		
+		System.out.println("\n== Menambah 2 elemen ==\n= Sebelum ditambah =");
+		
+		int[] nilai1 = {11,12,13,14,15};
+		System.out.println(Arrays.toString(nilai1));
+		int tambah1 = 16;
+		int tambah2 = 17;
+		
+		int[] nilai2 = new int [nilai1.length+2];
+		
+		for (int b = 0; b < nilai1.length; b++) {
+			nilai2[b] = nilai1[b];
+		}
+		
+		nilai2[nilai1.length] = tambah1;
+		nilai2[nilai1.length+1] = tambah2;
+		
+		System.out.println("= Setelah ditambah =");
+		System.out.println(Arrays.toString(nilai2));
+		
+		System.out.println("===== Semangat =====");
+		
+		
+	}
+}
