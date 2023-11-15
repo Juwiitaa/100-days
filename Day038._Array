@@ -1,0 +1,33 @@
+package day38;
+import java.util.Arrays;
+public class Main {
+	public static void main(String[] args) {
+		
+		System.out.println("===== Menghapus nilai array =====");
+		
+		System.out.println("\n=== Sebelum dihapus ===");
+		int[] array1 = {1,2,3,4,5,6,7};
+		System.out.println(Arrays.toString(array1));
+		
+		int hapus = 5;
+		
+		if (hapus >= 0 && hapus < array1.length) {
+			int[] array2 = new int[array1.length-1];
+			
+			for (int a = 0, b = 0; a < array1.length; a++) {
+				if (a == hapus) {
+				continue;
+				}
+				
+				array2[b++] = array1[a];
+			}
+				
+				System.out.println("\n=== Setelah dihapus ===");
+				System.out.println(Arrays.toString(array2));
+				
+				System.out.println("\n===== Semangat =====");
+				
+				
+		}	
+	}
+}
