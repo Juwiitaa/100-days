@@ -1,0 +1,49 @@
+package day39;
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("===== Menghapus nilai pada array =====");
+		System.out.println("\n=== Sebelum dihapus ===");
+		
+		int[] array1 = {1,2,3,4,5,6,7,8,9,10};
+		System.out.println(Arrays.toString(array1));
+		System.out.print("ingin menghapus index ke- : ");
+		int hapus = input.nextInt();
+		
+		int[] array2;
+		
+		if (hapus >= 0 && hapus < array1.length) {
+			array2 = new int [array1.length-1];
+			
+			for (int a = 0, b = 0; a < array1.length; a++) {
+				if (a == hapus ) {
+					continue;
+				}
+				
+				array2[b++] = array1[a];
+			}
+			
+			System.out.println("=== Setelah dihapus ===");
+			System.out.println(Arrays.toString(array2));
+			
+		} else {
+			System.out.println("Pilihan anda tidak terdapat di pernyataan");
+			return;
+		}
+		
+		System.out.println("\n===== Angka genap & ganjil pada array =====");
+		
+		for (int c = 0; c < array2.length; c++){
+			if (array2[c] %2 == 0){
+				System.out.println(array2[c]+" adalah angka genap");
+			} else {
+				System.out.println(array2[c]+" adalah angka ganjil");
+				
+			}
+		}
+	}
+}
