@@ -1,0 +1,41 @@
+package day40;
+import java.util.Arrays;
+public class Main {
+	public static void main(String[] args) {
+		
+		System.out.println("===== Array 1 Dimensi (1D) =====");
+		
+		char[] nilai = {'A','B','C','D','E'};
+		
+		System.out.println("\n== Menampilkan array menggunakan Array.toString ==");
+		
+		System.out.println(Arrays.toString(nilai));
+		
+		System.out.println("============");
+		
+		System.out.println("=== Menampilkan array secara manual dengan loop index ===");
+		System.out.print("{"+nilai[0]+",");
+		System.out.print(nilai[1]+",");
+		System.out.print(nilai[2]+",");
+		System.out.print(nilai[3]+",");
+		System.out.print(nilai[4]+" }");
+		
+		System.out.println("\n============");
+		
+		System.out.println("=== Menampilkan array dengan for loop ===");
+		System.out.print("{");
+		for (char a = 0; a < nilai.length; a++){
+			System.out.print(nilai[a]+",");
+		}
+		System.out.print("}");
+		System.out.println("\n============");
+		
+		System.out.println("=== Menampilkan array dengan for-each loop ===");
+		System.out.print("{");
+		for (char nilai2 : nilai) {
+			System.out.print(nilai2+",");
+		}
+		System.out.print("}\n\n===== Semangat =====");
+		
+	}
+}
