@@ -1,0 +1,56 @@
+package day45;
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("===== Array Kosong =====");
+		int[] nilai = new int[3];
+		
+		System.out.println(Arrays.toString(nilai));
+		
+		System.out.print("\nMasukkan niilai index ke-1 : ");
+		int tambah1 = input.nextInt();
+		System.out.print("Masukkan niilai index ke-2 : ");
+		int tambah2 = input.nextInt();
+		System.out.print("Masukkan niilai index ke-3 : ");
+		int tambah3 = input.nextInt();
+			
+		nilai[0] = tambah1;
+		nilai[1] = tambah2;
+		nilai[2] = tambah3;
+			
+		System.out.println("\n===== Array yang telah diisi =====");	
+		System.out.println(Arrays.toString(nilai));
+		
+		System.out.print("\nIngin menghapus nilai array? (y/t) : ");
+		char pilih = input.next().charAt(0);
+		
+		if(pilih == 'y'){
+			System.out.print("Ingin menghapus index ke- : ");
+			int hapus = input.nextInt();
+			
+			if (hapus >= 0 && hapus < nilai.length){
+		
+				int[] nilaiBaru = new int [nilai.length-1];
+		
+					for (int a = 0, b = 0; a < nilai.length; a++){
+						if (a == hapus) {
+							continue;
+						}
+					nilaiBaru[b++] = nilai[a];
+					}
+			
+				System.out.println("\n===== setelah dihapus =====");
+				System.out.println(Arrays.toString(nilaiBaru));
+			}
+		} else if (pilih == 't'){
+		} else {
+			System.out.println("Pilihan anda tidak valid");
+		}
+			
+		
+	}
+}
