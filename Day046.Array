@@ -1,0 +1,52 @@
+package day46;
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("===== Menambah nilai pada array =====\n\n=== nilai awal ===");
+		
+		int[] nilai = {80,81,82,83,84};
+		int tambah, angka, indexBaru = 0, arrayBaru = 0 ;
+		
+		System.out.println(Arrays.toString(nilai));
+		
+		while (true){
+		
+		System.out.print("\nMasukkan nilai : ");
+		tambah = input.nextInt();
+		angka = tambah % 2;
+		
+		if (angka == 00){
+			indexBaru = nilai[4] + tambah;
+		} else {
+			indexBaru = nilai[0] + tambah;
+		}
+		System.out.println("\n"+indexBaru);
+		
+		int[] nilaiBaru = new int [nilai.length+1];
+		
+		for (int a = 0; a < nilai.length; a++){
+			nilaiBaru[a] = nilai[a];
+		}
+		nilaiBaru[nilaiBaru.length-1] = indexBaru;
+		
+		System.out.println(Arrays.toString(nilaiBaru));
+		
+		nilaiBaru[arrayBaru] = indexBaru;
+		arrayBaru++;
+		System.out.println("\nmasih ingin lanjut?");
+		System.out.print("jawab (y/t) : ");
+		char pilih = input.next().charAt(0);
+		
+		if (pilih == 'y'){
+			System.out.println();
+		} else {
+			break;
+		}
+		
+		}
+	}
+}
