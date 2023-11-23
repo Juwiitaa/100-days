@@ -9,7 +9,7 @@ public class Main {
 		System.out.println("===== Menambah nilai pada array =====\n\n=== nilai awal ===");
 		
 		int[] nilai = {80,81,82,83,84};
-		int tambah, angka, indexBaru = 0, arrayBaru = 0 ;
+		int tambah, angka, indexBaru;
 		
 		System.out.println(Arrays.toString(nilai));
 		
@@ -31,12 +31,11 @@ public class Main {
 		for (int a = 0; a < nilai.length; a++){
 			nilaiBaru[a] = nilai[a];
 		}
-		nilaiBaru[nilaiBaru.length-1] = indexBaru;
+		
+		nilaiBaru[nilai.length] = indexBaru;
 		
 		System.out.println(Arrays.toString(nilaiBaru));
 		
-		nilaiBaru[arrayBaru] = indexBaru;
-		arrayBaru++;
 		System.out.println("\nmasih ingin lanjut?");
 		System.out.print("jawab (y/t) : ");
 		char pilih = input.next().charAt(0);
