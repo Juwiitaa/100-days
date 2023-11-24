@@ -1,0 +1,49 @@
+package day47;
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		int indexBaru,angka,tambah;
+		System.out.println("===== Array awal =====");
+		
+		int[] pecahan = {4,5,6};
+		System.out.println(Arrays.toString(pecahan));
+		
+		while (true){
+			
+			System.out.print("\nMasukkan angka : ");
+			tambah = input.nextInt();
+			angka = tambah % 2;
+			
+			if (angka == 00){
+				indexBaru = pecahan[2] + tambah;
+			} else {
+				indexBaru = pecahan[0] + tambah;
+			}
+			
+			int[] uang = Arrays.copyOf(pecahan, pecahan.length+1);
+			for(int a = 0; a < pecahan.length; a++){
+				uang[a] = pecahan[a];
+			}
+			
+			uang[pecahan.length] = indexBaru;
+		
+			System.out.println("\n===== Array baru =====");
+			System.out.println(Arrays.toString(uang));
+			
+			System.out.print("\nLanjut? (y/t) : ");
+			char pilih = input.next().charAt(0);
+			
+			if (pilih == 'y'){
+				
+			} else {
+				System.out.println("\n===== Semangat =====");
+				break;
+			}
+		
+		}
+	}
+}
