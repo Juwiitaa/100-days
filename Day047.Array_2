@@ -18,7 +18,7 @@ public class Main {
 			tambah = input.nextInt();
 			angka = tambah % 2;
 			
-			if (angka == 00){
+			if (angka == 0){
 				indexBaru = pecahan[2] + tambah;
 			} else {
 				indexBaru = pecahan[0] + tambah;
