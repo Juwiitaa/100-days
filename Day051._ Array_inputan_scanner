@@ -1,0 +1,28 @@
+package day51;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("===== Mengisi array dengan nilai mahasiswa  =====");
+		System.out.print("\nMasukkan jumlah mahasiswa : ");
+		
+		int jumlah = input.nextInt();
+		int[] nilaiMahasiswa = new int[jumlah];
+		
+		for (int a = 0; a < jumlah; a++){
+			System.out.print("Input nilai : ");
+			nilaiMahasiswa[a] = input.nextInt();
+		}
+		
+		System.out.println("\n=== Nilai Mahasiswa ===");
+		System.out.print("{");
+		
+		for (int b : nilaiMahasiswa){
+			System.out.print(b+",");
+		}
+		System.out.println("}\n\n===== Semangat =====");
+		
+	}
+}
