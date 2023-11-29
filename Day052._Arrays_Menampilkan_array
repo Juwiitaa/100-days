@@ -1,0 +1,54 @@
+package day52;
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("===== Macam-macam cara menampilkan array =====\n\n===== Mengisi array dengan nilai mahasiswa  =====");
+		System.out.print("\nMasukkan jumlah mahasiswa : ");
+		
+		int jumlah = input.nextInt();
+		int[] nilaiMahasiswa = new int[jumlah];
+		
+		for (int a = 0; a < jumlah; a++){
+			System.out.print("Input nilai : ");
+			nilaiMahasiswa[a] = input.nextInt();
+		}
+		
+		System.out.println("\n=== Arrays.toString ===");
+		System.out.println(Arrays.toString(nilaiMahasiswa));
+		
+		System.out.println("=== For loop ===");
+		System.out.print("[");
+		for (int b = 0; b < nilaiMahasiswa.length; b++){
+			System.out.print(nilaiMahasiswa[b]+",");
+		}
+		
+		System.out.println("]\n=== For-each loop ===");
+		System.out.print("[");
+		for (int c : nilaiMahasiswa){
+			System.out.print(c+",");
+		}
+		
+		System.out.println("]\n=== Do-while ===");
+		int d = 0;
+		System.out.print("[");
+		do{
+			System.out.print(nilaiMahasiswa[d]+",");
+			d++;
+		} while (d < nilaiMahasiswa.length);
+		
+		System.out.println("]\n=== While loop ===");
+		int e = 0;
+		System.out.print("[");
+		while (e < nilaiMahasiswa.length){
+			System.out.print(nilaiMahasiswa[e]+",");
+			e++;
+		}
+		
+		System.out.println("]\n\n===== Semangat =====");
+			
+	}
+}
