@@ -1,0 +1,20 @@
+package day54;
+public class Main {
+	public static void main(String[] args) {
+		
+		System.out.println(" ===== Konversi Nilai =====\n");
+		
+		int[] nilai = {50, 55, 64, 74, 81, 84, 92, 95};
+		
+		for (int a = 0; a < nilai.length; a++){
+			if (nilai[a] < 70){
+				System.out.println("nilai "+nilai[a]+" tidak lulus");
+			} else if (nilai[a] >= 70){
+				System.out.println("nilai "+nilai[a]+" lulus");
+			}
+		}
+			
+			System.out.println("\n===== Semangat =====");
+		
+	}
+}
