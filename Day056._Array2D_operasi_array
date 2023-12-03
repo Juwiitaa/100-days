@@ -1,0 +1,61 @@
+package day56;
+public class Main {
+	public static void main(String[] args) {
+		
+		System.out.println("===== Operasi Array =====\n\n=== Diketahui array ===");
+		
+		int[][] nilai = {
+			{4, 4, 5, 5, 6, 6, 7},
+			{4, 3, 5, 5, 5, 4, 6},
+			{6, 6, 4, 7, 4, 5, 3}
+		};
+		int totalPenjumlahan = 0,totalPengurangan = nilai[0][0], totalPerkalian = 1, totalPembagian = nilai[0][0];
+		
+		for (int[] array : nilai){
+			System.out.print("[");
+			for ( int nilaiArray : array){
+				System.out.print(nilaiArray+",");
+			}
+			System.out.println("]");
+		}
+		
+		System.out.println("\n== Hasil Penjumlahan array ==");
+		
+		for (int a = 0; a < nilai.length; a++){
+			for (int b = 0; b < nilai[a].length; b++){
+				totalPenjumlahan += nilai[a][b];
+			}
+		}
+		System.out.println("total penjumlahan dari array tersebut adalah "+totalPenjumlahan);
+		
+		System.out.println("\n== Hasil Pengurangan array ==");
+		
+		for (int c = 0; c < nilai.length; c++){
+			for (int d = 0; d < nilai[c].length; d++){
+				totalPengurangan -= nilai[c][d];
+			}
+		}
+		System.out.println("total pengurangan dari array tersebut adalah "+totalPengurangan);
+		
+		System.out.println("\n== Hasil Perkalian array ==");
+		
+		for (int e = 0; e < nilai.length; e++){
+			for (int f = 0; f < nilai[e].length; f++){
+				totalPerkalian *= nilai[e][f];
+			}
+		}
+		System.out.println("total perkalian array tersebut adalah "+(long)totalPerkalian);
+		
+		System.out.println("\n== Hasil Pembagian array ==");
+		
+		for (int g = 0; g < nilai.length; g++){
+			for (int h = 0; h < nilai[g].length; h++){
+				totalPembagian /= nilai[g][h];
+			}
+		}
+		System.out.println("total pembagian array tersebut adalah "+totalPembagian);
+		
+		System.out.println("\n===== Semangat =====");
+		
+	}
+}
