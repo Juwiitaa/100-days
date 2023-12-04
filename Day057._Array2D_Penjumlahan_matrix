@@ -1,0 +1,55 @@
+package day57;
+public class Main {
+	public static void main(String[] args) {
+		
+		System.out.println("===== Penjumlahan matrix =====\n\n=== array 1 ===");
+		
+		int[][] array1 = {
+			{2, 4, 6, 8},
+			{1, 3, 5, 7},
+			{3, 4, 5, 6}
+		};
+		for (int[] a : array1){
+			System.out.print("[");
+			for (int b : a){
+				System.out.print(b+",");
+			}
+			System.out.println("]");
+		}
+		
+		System.out.println("\n=== array 2 ===");
+		int[][] array2 = {
+			{1, 4, 7, 0},
+			{2, 4, 6, 8},
+			{3, 7, 9, 5}
+		};
+		for (int[] c : array2){
+			System.out.print("[");
+			for (int d : c){
+				System.out.print(d+",");
+			}
+			System.out.println("]");
+		}
+		
+		int[][] arrayHasil = new int [array1.length][array1[0].length];
+		
+		for (int e = 0; e < array1.length; e++){
+			for (int f = 0; f < array1[e].length; f++){
+				arrayHasil[e][f] = array1[e][f] + array2[e][f];
+			}
+		}
+		
+		System.out.println("\n=== Hasil Penjumlahan ===");
+		
+		for (int[] g : arrayHasil){
+			System.out.print("[");
+			for (int h : g){
+				System.out.print(h+",");
+			}
+			System.out.println("]");
+		}
+		
+		System.out.println("\n===== Semangat =====");
+		
+	}
+}
