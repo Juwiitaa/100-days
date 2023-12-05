@@ -1,0 +1,41 @@
+package day58;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("===== Menginput array dengan Scanner =====\n");
+		
+		System.out.print("Masukkan jumlah baris : ");
+		int baris = input.nextInt();
+		
+		System.out.print("Masukkan jumlah kolom : ");
+		int kolom = input.nextInt();
+		
+		int[][] array = new int[baris][kolom];
+		
+		System.out.println();
+		
+		for (int a = 0; a < baris; a++){
+			for (int b = 0; b < kolom; b++){
+				System.out.print("Masukkan elemen : ");
+				array[a][b] = input.nextInt();
+			}
+			System.out.println();
+		}
+		
+		System.out.println("\n=== Menampilkan array yang telah diisi ===\n");
+		
+		for (int[] c : array){
+				System.out.print("[");
+				for (int d : c){
+					System.out.print(d+",");
+				}
+				System.out.println("]");
+		}
+		
+		System.out.println("\n===== Semangat =====");
+		
+	}
+}
