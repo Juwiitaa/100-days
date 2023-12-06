@@ -1,0 +1,38 @@
+package day59;
+public class Main {
+	public static void main(String[] args) {
+		
+		System.out.println("===== Nilai Maksimal dan Nilai Minimal =====");
+		
+		int[][] array = {
+			{12, 34, 32, 18, 9},
+			{10, 7, 21,15, 6},
+			{17, 19, 22, 4, 13}
+		};
+		
+		int nilaiTertinggi = Integer.MIN_VALUE;
+		for (int[] a : array) {
+			for (int b : a) {
+				if (b > nilaiTertinggi){
+					nilaiTertinggi = b;
+				}
+			}
+		}
+		
+		
+		int nilaiTerendah = Integer.MAX_VALUE;
+		for (int[] c : array) {
+			for (int d : c) {
+				if (d < nilaiTerendah){
+					nilaiTerendah = d;
+				}
+			}
+		}
+		
+		System.out.println("\nNilai tertinggi = "+nilaiTertinggi);
+		System.out.println("Nilai terendah = "+nilaiTerendah);
+		
+		System.out.println("\n===== Semangat =====");
+		
+	}
+}
