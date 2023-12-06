@@ -2,35 +2,36 @@ package day59;
 public class Main {
 	public static void main(String[] args) {
 		
-		System.out.println("===== Nilai Maksimal dan Nilai Minimal =====");
+		System.out.println("===== Nilai Maximum dan Minimum =====");
 		
 		int[][] array = {
-			{12, 34, 32, 18, 9},
-			{10, 7, 21,15, 6},
-			{17, 19, 22, 4, 13}
+			{1, 2, 3, 4, 5},
+			{6, 7, 8, 9, 10},
+			{11, 12, 13, 14, 15}
 		};
 		
-		int nilaiTertinggi = Integer.MIN_VALUE;
-		for (int[] a : array) {
-			for (int b : a) {
-				if (b > nilaiTertinggi){
-					nilaiTertinggi = b;
+		int max = array[0][0];
+		int min = array[0][0];
+		
+		System.out.println("\n=== Menampilkan array ===");
+		
+		for (int a = 0; a < array.length; a++){
+			System.out.print("[");
+			for (int b = 0; b < array[a].length; b++){
+				System.out.print(array[a][b]+",");
+				if (array[a][b] > max){
+					max = array[a][b];
+				}
+				
+				if (array[a][b] < min){
+					min = array[a][b];
 				}
 			}
+			System.out.println("]");
 		}
 		
-		
-		int nilaiTerendah = Integer.MAX_VALUE;
-		for (int[] c : array) {
-			for (int d : c) {
-				if (d < nilaiTerendah){
-					nilaiTerendah = d;
-				}
-			}
-		}
-		
-		System.out.println("\nNilai tertinggi = "+nilaiTertinggi);
-		System.out.println("Nilai terendah = "+nilaiTerendah);
+		System.out.println("\nNilai Maximum : "+max);
+		System.out.println("Nilai Minimum : "+min);
 		
 		System.out.println("\n===== Semangat =====");
 		
