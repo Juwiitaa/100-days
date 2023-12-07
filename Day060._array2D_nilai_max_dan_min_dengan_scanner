@@ -1,4 +1,4 @@
-package day60;
+pckage day60;
 import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
