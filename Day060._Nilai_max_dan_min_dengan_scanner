@@ -1,0 +1,54 @@
+package day60;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("===== Nilai max dan min =====\n");
+		
+		int baris, kolom;
+		
+		System.out.print("Masukkan jumlah baris : ");
+		baris = input.nextInt();
+		System.out.print("Masukkan jumlah kolom : ");
+		kolom = input.nextInt();
+		
+		int[][] array = new int [baris][kolom];
+		
+		 int max = Integer.MIN_VALUE;
+		 int min = Integer.MAX_VALUE;
+		 
+		 System.out.println();
+		 
+		 for (int a = 0; a < baris; a++){
+		 	for (int b = 0; b < kolom; b++){
+		 		System.out.print("Masukkan value : ");
+		 		array[a][b] = input.nextInt();
+		 		if (array[a][b] > max){
+		 			max = array[a][b];
+		 		}
+		 		if (array[a][b] < min){
+		 			min = array[a][b];
+		 		}
+		 	}
+		 	System.out.println();
+		 }
+		 
+		 System.out.println("\n=== Menampilkan array ===");
+		 
+		 for (int[] a : array){
+		 	System.out.print("[");
+		 	for (int b : a){
+		 		System.out.print(b+",");
+		 	}
+		 	System.out.println("]");
+		 }
+		 
+		 System.out.println("\nNilai maximum dari array tersebut adalah = "+max);
+		 System.out.println("Nilai minimum dari array tersebut adalah = "+min);
+		 
+		 System.out.println("\n===== Semangat =====");
+		
+	}
+}
