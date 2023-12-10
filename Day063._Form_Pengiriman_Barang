@@ -1,0 +1,98 @@
+package day63;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		double bayar = 0, biayaAsuransi = 0, totalBayar = 0;
+		String namaPengirim = "", noTelepon = "",tujuan = "", jenis = "", asuransi2 = "";
+		char tujuanPengiriman, jenisPengiriman, asuransi, pilih;
+		int beratBarang;
+		
+		do{
+			System.out.println("===== Form Pengiriman Barang =====");
+			System.out.print("\nNama Pengirim : ");
+			namaPengirim = input.next();
+			System.out.print("No. Pengirim  : ");
+			noTelepon = input.next();
+			System.out.println("Tujuan Pengiriman\n1. Bandung\n2. Jakarta\n3. Semarang");
+			System.out.print("Masukkan Pilihan (1/2/3) : ");
+			tujuanPengiriman = input.next().charAt(0);
+			System.out.println("Jenis Pengiriman\n1. REGULER\n2. EKSPRES");
+			System.out.print("Masukkan pilihan (1/2) : ");
+			jenisPengiriman = input.next().charAt(0);
+			System.out.print("Berat Barang (Kg) : ");
+			beratBarang = input.nextInt();
+			System.out.print("Asuransi (y/t) : ");
+			asuransi = input.next().charAt(0);
+			System.out.println("Lanjut\n1. Submit\n2. Reset");
+			System.out.print("Masukkan pilihan : ");
+			pilih = input.next().charAt(0);
+		
+			if (pilih == '1'){
+				if (jenisPengiriman == '1'){
+					if(tujuanPengiriman == '1'){
+						bayar = beratBarang * 10000;
+						tujuan = "Bandung";
+					} else if (tujuanPengiriman == '2'){
+						bayar = beratBarang * 20000;
+						tujuan = "Jakarta";
+					} else if (tujuanPengiriman == '3'){
+						bayar = beratBarang * 30000;
+						tujuan = "Semarang";
+					} else {
+						System.out.println("\npilihan Tujuan Pengiriman anda tidak valid, silahkan pilih ulang!\n");
+					}
+					jenis = "REGULER";
+				} else if (jenisPengiriman == '2'){
+					if (tujuanPengiriman == '1'){
+						bayar = beratBarang * 12000;
+						tujuan = "Bandung";
+					} else if ( tujuanPengiriman == '2'){
+						bayar = beratBarang * 24000;
+						tujuan = "Jakarta";
+					} else if (tujuanPengiriman == '3'){
+						bayar = beratBarang * 35000;
+						tujuan = "Semarang";
+					} else {
+						System.out.println("\npilihan Tujuan Pengiriman anda tidak valid, silahkan pilih ulang!\n");
+					}
+					jenis = "EKSPRES";
+				} else {
+					System.out.println("\nPilihan Jenis Pengiriman anda tidak valid, silahkan pilih ulang!\n");
+				}		
+			} else if (pilih == '2') {
+				System.out.println();
+			} else {
+				System.out.println("\npilihan lanjut anda tidak valid, silahkan pilih ulang!\n");
+			}
+			
+			if (asuransi == 'y'){
+				biayaAsuransi = bayar * 0.07;
+				asuransi2 = "YA";
+			} else if (asuransi == 't'){
+				biayaAsuransi = 0;
+				asuransi2 = "TIDAK";
+			} else {
+				System.out.println("\npilihan Asuransi anda tidak valid, silahkan pilih ulang!\n");
+			}
+			
+			totalBayar = bayar + biayaAsuransi;
+			
+		} while ((!(tujuanPengiriman == '1' || tujuanPengiriman == '2' || tujuanPengiriman == '3')) || pilih == '2' || (!(jenisPengiriman == '1' || jenisPengiriman == '2')) || (!(asuransi == 'y' || asuransi == 't')) || (!(pilih == '1' || pilih == '2')));
+		
+		System.out.println("\nNama Pengirim : "+namaPengirim);
+			System.out.println("No. Pengirim : "+noTelepon);
+			System.out.println("Tujuan Pengiriman : "+tujuan);
+			System.out.println("Jenis Pengiriman : "+jenis);
+			System.out.println("Berat Barang : "+beratBarang);
+			System.out.println("Asuransi : "+asuransi2);
+			System.out.println("\nBAYAR : "+bayar);
+			System.out.println("BIAYA ASURANSI : "+biayaAsuransi);
+			System.out.println("TOTAL BAYAR : "+totalBayar);
+		
+		System.out.println("\n===== Semangat =====");
+		
+	}
+}
