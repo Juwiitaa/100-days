@@ -1,0 +1,25 @@
+package day62;
+public class JadwalMakan {
+    public static void main(String[] args) {
+        
+        System.out.println("===== Menu Makanan =====\n\n=== Array 2D ===\n");
+        
+        String[][] jadwal = {
+            {"Mie Bakso", "Nasi Goreng"},
+            {"Mie Ayam", "Ayam Bakar"},
+            {"Ikan Goreng", "Sop Sayur"}
+        };
+        
+        int nomor = 0;
+
+        for (int waktu = 0; waktu < jadwal.length; waktu++) {
+            for (int makanan = 0; makanan < jadwal[waktu].length; makanan++){
+             nomor++;
+  	          System.out.println(nomor +". "+ jadwal[waktu][makanan]);
+            }
+        }
+        
+        System.out.println("\n===== Semangat =====");
+        
+    }
+}
