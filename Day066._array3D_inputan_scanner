@@ -1,0 +1,47 @@
+package day66;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("===== Array 3 Dimensi =====\n");
+		
+		System.out.print("Masukkan jumlah layer : ");
+		int layer = input.nextInt();
+		System.out.print("Masukkan jumlah baris : ");
+		int baris = input.nextInt();
+		System.out.print("Masukkan jumlah kolom : ");
+		int kolom = input.nextInt();
+		
+		int[][][] array = new int [layer][baris][kolom];
+		
+		System.out.println();
+		
+		for (int a = 0; a < layer; a++){
+			for (int b = 0; b < baris; b++){
+				for (int c = 0; c < kolom; c++){
+					System.out.print("Input elemen : ");
+					array[a][b][c] = input.nextInt();
+				}
+				System.out.println();
+			}
+		}
+		
+		System.out.println("=== Menampilkan array ===\n");
+		
+		for (int d = 0; d < array.length; d++){
+			System.out.println("=== Layer ke "+(d+1)+" ===");
+			for (int e = 0; e < array[d].length; e++){
+				System.out.print("[");
+				for (int f = 0; f < array[d][e].length; f++){
+					System.out.print(array[d][e][f]+",");
+				}
+				System.out.println("]");
+			}
+		}
+		
+		System.out.println("\n===== Semangat =====");
+		
+	}
+}
